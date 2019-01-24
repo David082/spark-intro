@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.3" xsi:schemaLocation="http://www.dmg.org/PMML-4_3 http://www.dmg.org/pmml/v4-3/pmml-4-3.xsd">
+  <Header copyright="Copyright (c) 2018 yu_wei" description="Linear Regression Model">
+    <Extension name="user" value="yu_wei" extender="Rattle/PMML"/>
+    <Application name="Rattle/PMML" version="1.4"/>
+    <Timestamp>2018-05-10 16:44:26</Timestamp>
+  </Header>
+  <DataDictionary>
+    <DataField name="Sepal.Length" optype="continuous" dataType="double"/>
+    <DataField name="Petal.Width" optype="continuous" dataType="double"/>
+    <DataField name="x" dataType="double" optype="continuous"/>
+    <DataField name="y" dataType="double" optype="continuous"/>
+  </DataDictionary>
+  <TransformationDictionary>
+    <DerivedField name="z" dataType="double" optype="continuous">
+      <Apply function="+">
+        <FieldRef field="x"/>
+        <FieldRef field="y"/>
+      </Apply>
+    </DerivedField>
+  </TransformationDictionary>
+  <RegressionModel modelName="Linear_Regression_Model" functionName="regression" algorithmName="least squares">
+    <MiningSchema>
+      <MiningField name="Sepal.Length" usageType="predicted" invalidValueTreatment="returnInvalid"/>
+      <MiningField name="Petal.Width" usageType="active" invalidValueTreatment="returnInvalid"/>
+    </MiningSchema>
+    <Output>
+      <OutputField name="Predicted_Sepal.Length" feature="predictedValue"/>
+      <Apply function="if">
+        <Apply function="equal">
+          <FieldRef field="x"/>
+          <Constant dataType="double">3</Constant>
+        </Apply>
+        <Constant dataType="double">3</Constant>
+        <Constant dataType="double">0</Constant>
+      </Apply>
+    </Output>
+    <RegressionTable intercept="0.0">
+      <NumericPredictor name="Petal.Width" exponent="1" coefficient="1.0"/>
+    </RegressionTable>
+  </RegressionModel>
+</PMML>

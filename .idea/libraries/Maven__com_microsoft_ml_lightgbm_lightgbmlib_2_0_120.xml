@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.microsoft.ml.lightgbm:lightgbmlib:2.0.120">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/microsoft/ml/lightgbm/lightgbmlib/2.0.120/lightgbmlib-2.0.120.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/microsoft/ml/lightgbm/lightgbmlib/2.0.120/lightgbmlib-2.0.120-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/microsoft/ml/lightgbm/lightgbmlib/2.0.120/lightgbmlib-2.0.120-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
