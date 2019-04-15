@@ -1,6 +1,6 @@
 # Spark in action
 <ul>
-<li><a href="http://git.dev.sh.ctripcorp.com/best_htlRanking/spark-intro/blob/master/SparkInstall.md">Intellij安装及Spark环境配置</a></li>
+<li><a href="https://github.com/David082/spark-intro/blob/master/SparkInstall.md">Intellij安装及Spark环境配置</a></li>
 <!--<li><a href="http://git.dev.sh.ctripcorp.com/best_htlRanking/spark-intro/blob/master/chap02.md">chap02 Intellij操作Gitlab</a></li>-->
 <li>【chap01】 Spark简介/Spark DataFrame</li>
 <ul>
