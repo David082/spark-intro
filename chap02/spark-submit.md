@@ -38,7 +38,7 @@ http://svr15543hp360.hadoop.sh.ctripcorp.com:8088<br>
  --class hotel.poirank.LightgbmModel spark-lightgbm-1.0.jar
 </pre>
 ##### yarn模式架构
-<img src="img/chap02/yarn-client.png"/><br>
+<img src="./img/chap02/yarn-client.png"/><br>
 #### 3. Spark 集群参数配置
 ###### refer
 https://spark.apache.org/docs/2.0.1/configuration.html<br>
